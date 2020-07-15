@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Second Assignment - Day 3
+        </title>
+        
+    </head>
+    <body>
+        <h1>Difference bitween var, Let and const </h1>    
+         
+          <script>
+           /* var is datatype in which we can assign any global variable like int
+           string etc.. and we can modify then any where in the program*/
+           var name="raghu";
+           var age=23;
+           var student=true;
+           var friends=['vamsi','ganesh','kumar'];
+           console.log(friends[2]);
+           friends[1]="indeevar";
+           console.log(friends);
+
+           /* Let is datatype in which we can assign variables locally like a function scope 
+           so that we can modify them inside the function and we can add more 
+           variables but we can not replace them entirely*/
+           {
+               let sname="suresh";
+               console.log(name);
+           }
+           /*const is keyword, it is nothing but constant, once we create 
+           variable using const  we cannot  change the value wherever in the
+           program*/ 
+           const rollno=202;
+         </script>
+        
+        
+    </body>
+</html>
