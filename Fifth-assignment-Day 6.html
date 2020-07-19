@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Fifth-assignment-Day 6</title>
+</head>
+<body>
+    <h1>Incentives sales chart for emplooyes </h1>
+    <script>
+        let salary=10000;
+        let incentives;
+        let sales=15000;
+     if(sales>0 && sales<=5000)
+     {
+       incentives=salary+(0.02*salary);
+       console.log(incentives);
+     }
+    else if (sales>5000 && sales<=7000)
+    {
+       incentives=salary+(0.05*salary);
+       console.log(incentives);
+    }
+
+    else if(sales>7000 && sales<=10000)
+    {
+       incentives=salary+(0.07*salary);
+       console.log(incentives);
+    }
+     else if(sales>10000)
+     {
+       incentives=salary+(0.1*salary);
+       console.log(incentives);
+     }
+    </script>
+
+</body>
+</html>

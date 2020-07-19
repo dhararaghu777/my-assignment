@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eigth-assignment -Day 6</title>
+</head>
+<body>
+    <script>
+        let ask=(question,yes,no)=>
+        {
+        if(confirm(question))
+        {
+           yes(); 
+        }
+        else
+        {
+           no() ;
+        }
+        }
+     ask("do you agree?",
+     function(){alert("you agreed");},
+     function(){alert("you cancel the excecution");});
+
+    </script>
+    
+</body>
+</html>
