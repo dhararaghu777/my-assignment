@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Third Assignment - Day 6
+        </title>
+    </head>
+    <body>
+        <h1></h1>
+        <script>
+           const photos=[];
+           async function photoUpload()
+           {
+               let status=new Promise((resolve,reject)=>
+               {
+                setTimeout(()=>{
+                    photos.push("avatar");
+                    resolve("profile updated");},300)})
+            let result=await status;
+            console.log(result.length);
+            } 
+        photoUpload();
+         </script>
+    </body>
+
+</html>

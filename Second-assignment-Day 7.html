@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            Second Assignment - Day 7
+        </title>
+        
+    </head>
+    <body>
+        <h1>OOPs concept</h1>    
+         
+          <script>
+          class User
+          {
+              constructor(name,age,email)
+              {
+                  this.name=name;
+                  this.age=age;
+                  this.email=email;
+              }
+              login()
+              {
+                  console.log(`${this.name} has logged in`);
+              }
+              logout()
+              {
+                  console.log(`${this.name} has logged out`);
+              }
+
+          }
+          class Moderate extends User
+          {
+              constructor(name,age,email,coins)
+              {
+                super(name,age,email);
+                  this.coins=coins;
+              }
+             AddCoins()
+             {
+                 console.log(coins++);
+                 return this.coins;
+             }
+            RemoveCoins()
+            {
+                console.log(coins--);
+                return this.coins;
+            }
+          }
+          class Admin extends Moderate
+          {
+              constructor(name,age,email,coins,course)
+              {
+                  super(name,age,email,coins);
+                  this.course=course;
+
+              }
+              AddCourse(course)
+              {
+                  this.course=course;
+                 console.log(this.course);
+              }
+              DeleteCourse()
+              {
+                  this.course=null;
+              }
+          }
+          let user=new User("john",24,"john@gmail.com");
+          let moderate=new Moderate("john",24,"john@gmail.com",1);
+          let admin=new Admin("john",24,"john@gmail.com",1,"javascript");
+          admin.AddCourse("python");
+          admin.DeleteCourse();
+          console.log(admin);
+    
+         </script>
+    
+    </body>
+</html>

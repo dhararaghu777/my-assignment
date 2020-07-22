@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>First Assignment-Day 7</title>
+</head>
+<body>
+    <script>
+     let num=prompt("enter the number");
+     let arr=[];
+     let i;
+     for(i=1;i<=num;i++)
+     {
+       arr.push(i);
+     }
+     let odd=arr.filter((element)=>element%2==1);
+     let squareOdd=odd.map((element)=>element**2);
+     console.log(squareOdd);
+
+    </script>
+</body>
+</html>
