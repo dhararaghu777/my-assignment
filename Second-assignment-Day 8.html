@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Second Assignment - Day 8
+        </title>
+        
+    </head>
+    <body>
+        <h1>Multiplication Table</h1>    
+        <h3 id='input'>input=</h3>
+        <h3 id="output"></h3>
+        <h3 id="output1"></h3>
+         
+          <script>
+         let number=prompt("enter a number");
+         let i=0;
+         function multiply()
+         {
+            document.getElementById('input').innerText+= number;
+         }
+         function multiply1()
+         {
+            document.getElementById("output").innerHTML="Output=";
+         }
+         function multiply3()
+         {  
+             while(i<11)
+             document.getElementById('output1').innerText+=`${number}*${i}=`+number*i++ +`\n`;
+         }
+        
+        multiply();
+        multiply1();
+        multiply3();
+      
+
+
+         </script>
+    
+    </body>
+</html>

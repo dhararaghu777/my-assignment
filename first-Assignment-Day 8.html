@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>First Assignment-Day 8</title>
+</head>
+<body>
+  <h1>Hello there..</h1>
+    <script>
+      let arr=['red','blue','green','yellow','orange','brown','lightgreen','wheet','purple']
+      let i=0;
+    function color() 
+    { 
+         document.body.style.backgroundColor=arr[i++];
+         if(i==arr.length)
+         {
+           i=0;
+         }
+        
+    }
+    function changeColor()
+    {
+      setInterval(() => {
+        color();  
+      }, 1000);
+    }
+    changeColor();
+    </script>
+</body>
+</html>

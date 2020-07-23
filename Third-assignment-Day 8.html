@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            Third Assignment - Day 7
+        </title>
+    </head>
+    <body>
+        <h1 id='name1'></h1>
+        <h2 id='name2'></h2>
+        <h3 id="name3"></h3>
+        <p id='para'>This page contains a list of special pages. Most of the content of these pages is automatically generated and cannot be edited. To suggest a change to the parts that can be edited, find the appropriate text on Special:AllMessages and then request your change on the talk page of the message (using {{editprotected}} to draw the attention of administrators).</p>
+
+        <button id='btn' onclick="background()" ondblclick="background1()">Enable Dark Mode</button>
+
+        <script>
+          let name=prompt("enter name");
+          let output=document.getElementById("name1").innerText=`Welcome you, ${name}`;
+ 
+          const ctime = document.getElementById('name2');
+
+          function clock()
+          {
+          let date = new Date();
+          let time = date.toLocaleTimeString();
+           ctime.innerText = time;
+          }
+
+          setInterval(clock,1000);
+
+
+         let textchange=document.getElementById('para');
+         textchange.style.color='red';
+         textchange.style.fontFamily='tahoma';
+
+         function background()
+         {
+             document.getElementById("btn").innerText='Double click to Disable Dark Mode';
+             document.body.style.backgroundColor='black';
+             document.body.style.color='white';
+         }
+        function background1()
+        {
+             document.getElementById("btn").innerHTML='Enable Dark Mode';
+             document.body.style.backgroundColor='white';
+             document.body.style.color='black';
+        
+         }
+        
+         </script>
+    </body>
+
+</html>
